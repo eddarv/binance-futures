@@ -1,11 +1,6 @@
 import Datafeed from './datafeed.js';
 import {makeApiRequest} from './helpers.js';
 
-var canvasin = document.getElementById('micanvas');
-var ctx = canvasin.getContext('2d');
-let scroll=0
-
-
 window.tvWidget = new TradingView.widget({
     symbol: 'BTC/USDT', // default symbol
     interval: '5', // default interval
