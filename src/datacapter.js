@@ -1,6 +1,6 @@
 async function makeApiRequest(path) {
     try {
-        const response = await fetch(`http://127.0.0.1:9091/fetchAPI?endpoint=https://fapi.binance.com/${path}`)
+        const response = await fetch(`https://fapi.binance.com/${path}`)
         
         return response.json();
     } catch(error) {
